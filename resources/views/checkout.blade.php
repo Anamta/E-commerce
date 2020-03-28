@@ -144,7 +144,7 @@
                                               
                                         <script
                                           src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                                          data-key="pk_test_F2abCyLu7yISAlydw7uSy3qP00slA2YGuz"
+                                          data-key=""
                                           data-amount="{{Cart::getTotal() * 100}}"
                                           data-name="E-Commerce"
                                           data-description="Buy Anything"
@@ -198,7 +198,7 @@
 @endsection
    
 <script>
-  var stripe = Stripe('pk_test_F2abCyLu7yISAlydw7uSy3qP00slA2YGuz');
+  var stripe = Stripe('');
   var elements = stripe.elements();
 
   var style = {
